@@ -10,7 +10,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
       <div class="col" v-for="(recipe, index) in recipes" :key="index">
         <div class="card h-100">
-          <img src="..." class="card-img-top" alt="..." />
+          <!-- <img src="" class="card-img-top" alt="..." /> -->
           <div class="card-body">
             <h5 class="card-title">{{ recipe.title }}</h5>
             <p class="card-text">{{ recipe.ingredients }}</p>
@@ -82,7 +82,7 @@
 
 <script setup>
 import { RouterLink, useRouter } from "vue-router";
-import { useRecettetore } from "../../store/recetteStore";
+import { useRecettetore } from "@/store/recetteStore";
 
 const store = useRecettetore();
 const recipes = store.recipes;

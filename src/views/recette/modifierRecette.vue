@@ -26,7 +26,7 @@
   <script setup>
   import { ref, onMounted } from 'vue';
   import { useRouter, useRoute } from 'vue-router';
-import { useRecettetore } from '../../store/recetteStore';
+import { useRecettetore } from '@/store/recetteStore';
   
   const store = useRecettetore();
   const route = useRoute();

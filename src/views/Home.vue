@@ -1,5 +1,6 @@
 <template>
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div class="container content h-">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -7,14 +8,14 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://french-blog.bonial.fr/assets/images/posts/recettes-ete-tian.png" class="d-block w-100" alt="...">
+      <img src="https://french-blog.bonial.fr/assets/images/posts/recettes-ete-tian.png" class="d-block w-100" >
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://i.pinimg.com/474x/28/bb/d1/28bbd1693cf15ee19cc6d6493a98388e.jpg" class="d-block w-100" alt="...">
+      <img src="https://i.pinimg.com/474x/28/bb/d1/28bbd1693cf15ee19cc6d6493a98388e.jpg" class="d-block w-100">
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
@@ -37,7 +38,15 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
 </template>
 
 <script setup>
 </script>
+
+<style scoped>
+.content{
+  height: 25%;
+  width: 25%;
+}
+</style>

@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
-import AjouteRecette from "../views/recette/ajouteRecette.vue";
-import ListeRecette from "../views/recette/listeRecette.vue";
-import Home from "../views/Home.vue";
-import ModifierRecette from "../views/recette/modifierRecette.vue";
-import ShowRecette from "../views/recette/showRecette.vue";
+import AjouteRecette from "@/views/recette/ajouteRecette.vue";
+import ListeRecette from "@/views/recette/listeRecette.vue";
+import Home from "@/views/Home.vue";
+import ModifierRecette from "@/views/recette/modifierRecette.vue";
+import ShowRecette from "@/views/recette/showRecette.vue";
 
 const routes = [
   {

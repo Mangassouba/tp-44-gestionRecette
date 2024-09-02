@@ -25,7 +25,7 @@
   
   <script setup>
   import { ref } from 'vue';
-import { useRecettetore } from '../../store/recetteStore';
+import { useRecettetore } from '@/store/recetteStore';
 import { useRouter } from 'vue-router';
   
   const title = ref('');
