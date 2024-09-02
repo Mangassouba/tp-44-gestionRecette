@@ -82,11 +82,12 @@ l'application a été developpeée en utilisant vuejs 3 avec la compostion  API 
 
 - Taggez votre image :
 
-        docker tag gestion_recette mangassouba15/gestion_recette
+        docker tag gestion_recette:latest mangassouba15/gestion_recette:latest
 
 - Poussez l'image sur Docker Hub :
 
-docker push mangassouba/gestion_recette
+        docker push mangassouba/gestion_recette
+
 
 ## Auteur
 Hama Houllah Mangasouba
