@@ -3,8 +3,8 @@ import { defineStore } from 'pinia';
 export const useRecettetore = defineStore('recipes', {
   state: () => ({
     recipes: [{
-      title: 'maro',
-      ingredients: 'poivre',
+      title: 'crepe',
+      ingredients: '30 cl de lait, 10 cl d\'eau ,1/2 sachet de levure de boulanger , 7 œufs',
       type:"plat"
     }]
   }),

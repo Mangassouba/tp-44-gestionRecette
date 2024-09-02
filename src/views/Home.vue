@@ -1,5 +1,6 @@
 <template>
 <div class="container content h-">
+  <h1 class="text-center">Bienvenue à Rotana </h1>
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -8,21 +9,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://french-blog.bonial.fr/assets/images/posts/recettes-ete-tian.png" class="d-block w-100" >
+      <img src="https://fbi.cults3d.com/uploaders/31846184/illustration-file/261e0f4b-151a-461f-84d8-1f127fb9f857/WhatsApp-k%C3%A9p%2C-2024-03-07%2C-17.04.59_4fa1ce46.jpg" class="d-block w-100" >
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://i.pinimg.com/474x/28/bb/d1/28bbd1693cf15ee19cc6d6493a98388e.jpg" class="d-block w-100">
+      <img src="" class="d-block w-100">
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXi-UVWh0GqtUsimt5IRGRahIblH5agvB3QAMtAbfEFbO7Hcq90iV_xfHmMqIU6helZKs&usqp=CAU" class="d-block w-100" alt="...">
+      <img src="" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
@@ -46,7 +47,7 @@
 
 <style scoped>
 .content{
-  height: 25%;
-  width: 25%;
+  height: 70%;
+  width: 90%;
 }
 </style>
