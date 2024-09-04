@@ -22,9 +22,10 @@ l'application a été developpeée en utilisant vuejs 3 avec la compostion  API 
 
 ## Prérequis
 
+- nodejs
 - vuejs3
 - Git
-- Docker
+- pinia
 
 ## Installation
 
@@ -43,54 +44,11 @@ l'application a été developpeée en utilisant vuejs 3 avec la compostion  API 
 
         npm run dev
 
-## Conteneurisation avec Docker
+## Utilisation
 
-- Créez un fichier Dockerfile à la racine du projet :
-
-        FROM node:16-alpine AS build
-
-        WORKDIR /app
-
-        COPY package.json package-lock.json ./
-
-        RUN npm install
-
-        COPY . .
-
-        RUN npm run build
-
-        FROM nginx:alpine
-
-        COPY --from=build /app/dist /usr/share/nginx/html
-
-        EXPOSE 80
-
-        CMD ["nginx", "-g", "daemon off;"]
-
-- Construisez l'image Docker :
-
-        docker build -t gestion_recette .
-
-- Exécutez le conteneur :
-
-        docker run -d -p 3000:80 gestion_recette
-
-- Accédez à l'application via http://localhost:3000.
-
-## Publication sur Docker Hub
-
-- Connectez-vous à Docker Hub :
-
-        docker login
-
-- Taggez votre image :
-
-        docker tag gestion_recette:latest mangassouba15/gestion_recette:latest
-
-- Poussez l'image sur Docker Hub :
-
-        docker push mangassouba/gestion_recette
-
+- Naviguez entre les pages de menu via la barre de navigation.
+- Utilisez les formulaires pour ajouter ou modifier des recettes.
+- Visualisez les détails d'une recette en cliquant sur l'icône d'œil.
 
 ## Auteur
 Hama Houllah Mangasouba
