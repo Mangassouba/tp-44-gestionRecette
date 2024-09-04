@@ -31,6 +31,9 @@ l'application a été developpeée en utilisant vuejs 3 avec la compostion  API 
 - Clonez le repository :
 
         https://github.com/Mangassouba/tp-44-gestionRecette.git
+ - Accédez au dossier du projet
+
+            cd tp-44-gestionRecette
 
 - Installez les dépendances :
 
