@@ -2,22 +2,33 @@
   <div class="container mt-4">
     <h2>Liste des recettes</h2>
     <div class="mt-4">
-      <RouterLink class="btn btn-primary" :to="{ name: 'ajouteRecette' }"
+      <RouterLink
+        class="btn btn-primary"
+        :to="{ name: 'ajouteRecette' }"
         >Ajouter une recette</RouterLink
       >
     </div>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-      <div class="col" v-for="(recipe, index) in recipes" :key="index">
-        <div class="card h-100">
-          <!-- <img src="" class="card-img-top" alt="..." /> -->
-          <div class="card-body">
-            <h5 class="card-title">{{ recipe.title }}</h5>
-            <p class="card-text">{{ recipe.ingredients }}</p>
-            <p class="card-text">{{ recipe.type }}</p>
+    <table class="table table-striped table-bordered mt-4 mb-4">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Type</th>
+          <th scope="col">ingredients</th>
+          <th scope="col" class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(recipe, index) in recipes" :key="index">
+          <th scope="row">{{ index + 1 }}</th>
+          <td>{{ recipe.title }}</td>
+          <td>{{ recipe.ingredients }}</td>
+          <td>{{ recipe.type }}</td>
+          <td class="text-center">
             <button
               @click="deleteRecipe(index)"
-              class="btn btn-danger btn-sm float-end"
+              class="btn btn-danger btn-sm me-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +45,7 @@
             </button>
             <button
               @click="editRecipe(index)"
-              class="btn btn-warning btn-sm float-end me-2"
+              class="btn btn-warning btn-sm me-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +66,7 @@
             </button>
             <button
               @click="viewRecipe(index)"
-              class="btn btn-info btn-sm float-end me-2"
+              class="btn btn-info btn-sm me-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +84,10 @@
                 />
               </svg>
             </button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
